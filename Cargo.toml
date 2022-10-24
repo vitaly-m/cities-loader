@@ -1,0 +1,20 @@
+[package]
+name = "cities-loader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv="1.1"
+serde = { version = "1", features = ["derive"] }
+postgis_diesel="1.1"
+dotenv = "0.15.0"
+diesel = { version = "2.0", features = [
+    "postgres", 
+    "postgres_backend", 
+    "r2d2"] }
+diesel_migrations = "2.0"
+rand = "0.8"
+clap = { version = "4.0", features = ["derive"] }
+zip = "0.6.3"
